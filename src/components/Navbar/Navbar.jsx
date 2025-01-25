@@ -182,6 +182,11 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+        <ul>
+          <li>
+            <Link>+91 8765432434</Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
