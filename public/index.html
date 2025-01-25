@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Kunamy Cleaning and Painting Services - Your trusted provider for full house cleaning, bathroom cleaning, carpet cleaning, and professional interior and exterior painting." />
+  <meta name="keywords"
+    content="Cleaning services, House cleaning, Bathroom cleaning, Carpet cleaning, Sofa cleaning, Kitchen cleaning, Office cleaning, Interior painting, Exterior painting, Wood polishing, Swimming pool cleaning" />
+  <meta name="author" content="Kunamy Team" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Kunamy - Expert Cleaning and Painting Services" />
+  <meta property="og:description"
+    content="Kunamy offers professional cleaning and painting services, including house cleaning, carpet cleaning, sofa cleaning, and interior painting. Book your service today!" />
+  <meta property="og:image" content="https://kunamy.com/og-image.png" />
+  <meta property="og:url" content="https://kunamy.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kunamy - Cleaning and Painting Experts" />
+  <meta name="twitter:description"
+    content="Your one-stop solution for cleaning and painting services. From bathroom cleaning to wood polishing, we handle it all!" />
+  <meta name="twitter:image" content="https://kunamy.com/twitter-image.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://kunamy.com/" />
+
+  <title>Kunamy - Professional Cleaning and Painting Services</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const titles = ["Kunamy - Professional Cleaning and Painting Services", "1 New Message", "1 Unread Message"];
+      let currentTitleIndex = 0;
+
+      function updateTitle() {
+        document.title = titles[currentTitleIndex];
+        currentTitleIndex = (currentTitleIndex + 1) % titles.length; 
+      }
+
+      setInterval(updateTitle, 1000);
+    });
+  </script>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Kunamy Cleaning and Painting Services",
+    "url": "https://kunamy.com/",
+    "logo": "https://kunamy.com/logo.png",
+    "description": "Kunamy provides top-notch cleaning and painting services, including house cleaning, office cleaning, interior painting, and wood polishing.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Your Address Here",
+      "addressLocality": "Your City",
+      "addressRegion": "Your State",
+      "postalCode": "Your ZIP Code",
+      "addressCountry": "Your Country"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-234-567-890",
+      "contactType": "Customer Service"
+    },
+    "sameAs": [
+      "https://www.facebook.com/kunamy",
+      "https://twitter.com/kunamy",
+      "https://www.linkedin.com/company/kunamy"
+    ],
+    "service": [
+      {
+        "@type": "Service",
+        "name": "Cleaning Services",
+        "serviceType": "Full House Cleaning, Bathroom Cleaning, Kitchen Cleaning, Carpet Cleaning, Sofa Cleaning, Mattress Cleaning, Balcony Cleaning, Chair Cleaning, Office Cleaning, Swimming Pool Cleaning, Windows Cleaning"
+      },
+      {
+        "@type": "Service",
+        "name": "Painting Services",
+        "serviceType": "Interior Painting, Exterior Painting, Wood Polishing"
+      }
+    ]
+  }
+  </script>
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
