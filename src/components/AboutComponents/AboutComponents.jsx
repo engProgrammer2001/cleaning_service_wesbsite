@@ -38,12 +38,35 @@ const AboutComponents = () => {
       </div>
 
       {/* Right Image */}
-      <div className="lg:w-1/2 w-full flex justify-center p-4">
-        <img
-          src="https://www.healthyhomesutah.com/wp-content/uploads/Professional-House-Cleaning-Services-in-North-Ogden-Utah.jpg"
-          alt="About Us"
-          className="rounded-lg shadow-lg max-w-full h-auto"
-        />
+      <div className="grid grid-cols-2 gap-4 p-4">
+        <div className="flex justify-center">
+          <img
+            src="/assets/gallery/k4.jpeg"
+            alt="cleaning service"
+            className="rounded-lg shadow-lg max-w-full h-96"
+          />
+        </div>
+        <div className="flex justify-center">
+          <img
+            src="/assets/gallery/k9.jpeg"
+            alt=""
+            className="rounded-lg shadow-lg max-w-full h-96"
+          />
+        </div>
+        <div className="flex justify-center">
+          <img
+            src="/assets/gallery/k2.jpeg"
+            alt="bathroom clean images"
+            className="rounded-lg shadow-lg max-w-full h-96"
+          />
+        </div>
+        <div className="flex justify-center">
+          <img
+            src="/assets/gallery/k5.jpeg"
+            alt="fourth images"
+            className="rounded-lg shadow-lg max-w-full h-96"
+          />
+        </div>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Home = () => {
           {/* Left Side - Image */}
           <div className="lg:w-1/2 w-full flex items-center justify-center">
             <img
-              src="https://img.freepik.com/free-photo/professional-cleaning-service-person-using-vacuum-cleaner-office_23-2150520631.jpg"
+              src="/assets/gallery/k11.jpeg"
               alt="Placeholder"
               className="max-h-full max-w-full object-cover rounded-lg"
             />

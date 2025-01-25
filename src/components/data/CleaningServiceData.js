@@ -2,10 +2,9 @@ const CleaningServiceData = [
   {
     id: 1,
     title: "Full House Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/k7.jpeg",
+    image2: "/assets/gallery/k7.jpeg",
+    image3: "/assets/gallery/k7.jpeg",
     shortDescription: "Comprehensive cleaning for every corner of your house.",
     description:
       "Our Full House Cleaning service is designed to provide a spotless, hygienic living environment for you and your family. We meticulously clean every part of your home, including bedrooms, living rooms, kitchens, and bathrooms. Our team uses advanced equipment and eco-friendly cleaning solutions to remove dirt, stains, and allergens. Whether you need regular maintenance or a deep clean before a special event, this service is tailored to meet your needs. Experience a dust-free, germ-free, and fresh atmosphere that enhances your home’s overall ambiance, saving you time and effort while ensuring top-notch results.",
@@ -25,10 +24,9 @@ const CleaningServiceData = [
   {
     id: 2,
     title: "Bathroom Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/k2.jpeg",
+    image2: "/assets/gallery/k4.jpeg",
+    image3: "/assets/gallery/k1.jpeg",
     shortDescription: "Deep cleaning for a sparkling and hygienic bathroom.",
     description:
       "Our Bathroom Cleaning service includes deep cleaning and disinfecting of sinks, toilets, showers, and tiles. Hard water stains, soap scum, and grime are effectively removed. We use specialized products to kill bacteria and leave your bathroom smelling fresh and looking spotless.",
@@ -48,10 +46,9 @@ const CleaningServiceData = [
   {
     id: 3,
     title: "Kitchen Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/k7.jpeg",
+    image2: "/assets/gallery/k5.jpeg",
+    image3: "/assets/gallery/k11.jpeg",
     shortDescription: "Thorough cleaning of your kitchen for better hygiene.",
     description:
       "Our Kitchen Cleaning service ensures that your cooking space is free from grease, grime, and food particles. We clean countertops, cabinets, sinks, and appliances with care, ensuring a germ-free and hygienic environment. Say goodbye to stubborn stains and odors with our professional touch.",
@@ -71,10 +68,9 @@ const CleaningServiceData = [
   {
     id: 4,
     title: "Carpet Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Carpet Cleaning1.avif",
+    image2: "/assets/gallery/Carpet Cleaning2.avif",
+    image3: "/assets/gallery/Carpet Cleaning3.avif",
     shortDescription: "Professional carpet cleaning to restore freshness.",
     description:
       "Our Carpet Cleaning service removes dirt, allergens, and stains from your carpets. Using advanced cleaning techniques, we restore the softness and freshness of your carpets. This service is ideal for extending the life of your carpets and creating a cleaner indoor environment.",
@@ -94,10 +90,9 @@ const CleaningServiceData = [
   {
     id: 5,
     title: "Sofa Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Sofa Cleaning.jpg",
+    image2: "/assets/gallery/Sofa Cleaning1.jpg",
+    image3: "/assets/gallery/Sofa Cleaning3.avif",
     shortDescription:
       "Professional cleaning to keep your sofa fresh and hygienic.",
     description:
@@ -118,10 +113,9 @@ const CleaningServiceData = [
   {
     id: 6,
     title: "Mattress Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Mattress Cleaning.jpg",
+    image2: "/assets/gallery/Mattress Cleaning1.jpg",
+    image3: "/assets/gallery/Mattress Cleaning2.webp",
     shortDescription: "Deep cleaning for a healthier and fresher mattress.",
     description:
       "Our Mattress Cleaning service removes dust mites, allergens, and stains from your mattress. We use safe and effective methods to ensure your mattress is clean and fresh, promoting better sleep and overall health.",
@@ -141,10 +135,9 @@ const CleaningServiceData = [
   {
     id: 7,
     title: "Balcony Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Balcony Cleaning1.jpg",
+    image2: "/assets/gallery/Balcony Cleaning1.webp",
+    image3: "/assets/gallery/Balcony Cleaning2.webp",
     shortDescription:
       "Detailed cleaning to make your balcony tidy and inviting.",
     description:
@@ -165,10 +158,9 @@ const CleaningServiceData = [
   {
     id: 8,
     title: "Chair Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Chair Cleaning.jpg",
+    image2: "/assets/gallery/Chair Cleaning1.jpg",
+    image3: "/assets/gallery/Chair Cleaning3.avif",
     shortDescription: "Spotless chairs for your home or office.",
     description:
       "Our Chair Cleaning service removes stains, dust, and allergens from chairs. Suitable for all types of chairs, this service ensures a clean and fresh seating experience.",
@@ -188,10 +180,9 @@ const CleaningServiceData = [
   {
     id: 9,
     title: "Office Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Office Cleaning.jpg",
+    image2: "/assets/gallery/Office Cleaning2.jpg",
+    image3: "/assets/gallery/Office Cleaning3.jpg",
     shortDescription:
       "Professional cleaning for a productive office environment.",
     description:
@@ -212,10 +203,9 @@ const CleaningServiceData = [
   {
     id: 10,
     title: "Swimming Pool Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/wimming Pool Cleaning.jpeg",
+    image2: "/assets/gallery/wimming Pool Cleaning1.png",
+    image3: "/assets/gallery/wimming Pool Cleaning3.jpeg",
     shortDescription: "Ensure a clean and hygienic swimming pool.",
     description:
       "Our Swimming Pool Cleaning service removes debris, algae, and bacteria from your pool. We balance pool chemicals and ensure it is safe and inviting for use.",
@@ -235,10 +225,9 @@ const CleaningServiceData = [
   {
     id: 11,
     title: "Windows Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/Windows Cleaning2.jpg",
+    image2: "/assets/gallery/Windows Cleaning1.avif",
+    image3: "/assets/gallery/Windows Cleaning.jpeg",
     shortDescription: "Crystal clear windows for your home or office.",
     description:
       "Our Window Cleaning service makes your windows sparkle by removing dust, stains, and smudges. We ensure streak-free cleaning for better visibility and aesthetics.",

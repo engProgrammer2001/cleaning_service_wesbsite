@@ -15,9 +15,9 @@ const Footer = () => {
               <div>
                 <NavLink to="/">
                   <img
-                    src="/placeholder-logo.png" // Replace with your actual logo URL
+                    src="/assets/logo/logo.png" 
                     alt="Logo"
-                    className="h-20 rounded-full cursor-pointer"
+                    className="w-24 rounded-full cursor-pointer"
                   />
                 </NavLink>
               </div>
@@ -98,7 +98,8 @@ const Footer = () => {
                 <span className="font-semibold text-orange-400">
                   Address :{" "}
                 </span>
-                Your Office Address, City, Zip Code
+                B nagasandra,challaghatta,yemlur (post) Bangalore,Karnataka,
+                560073
               </p>
               <p className="text-lg">
                 <span className="font-semibold text-orange-400">Email : </span>
@@ -106,7 +107,7 @@ const Footer = () => {
               </p>
               <p className="text-lg">
                 <span className="font-semibold text-orange-400">Phone :</span>{" "}
-                +91 1234567890
+                +91 7899643609
               </p>
               <h2 className="py-3 font-bold text-lg underline">
                 Social Media Links:

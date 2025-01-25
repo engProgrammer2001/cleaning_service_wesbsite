@@ -22,9 +22,11 @@ const Navbar = () => {
   };
   return (
     <nav className="bg-blue-100 text-slate-800 relative z-50">
-      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+      <div className="container mx-auto px-4 flex justify-between items-center py-2">
         <div className="text-2xl font-bold">
-          <img src="/assets/logo/logo.png" className="h-12 w-12" alt="Logo" />
+          <Link to={"/"}>
+            <img src="/assets/logo/logo.png" className="w-24" alt="Logo" />
+          </Link>
         </div>
         {/* Toggle button for mobile */}
         <button className="md:hidden text-3xl" onClick={toggleMenu}>

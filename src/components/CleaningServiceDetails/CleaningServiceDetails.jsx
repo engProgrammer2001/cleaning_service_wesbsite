@@ -18,7 +18,7 @@ const CleaningServiceDetails = ({ CleaningServiceData }) => {
           <img
             src={service.image}
             alt={service.title}
-            className="w-full max-h-80 object-cover rounded-lg mb-6"
+            className="w-full max-h-96 object-cover rounded-lg mb-6"
           />
           <p className="text-gray-700 leading-relaxed mb-4">
             {service.shortDescription}
@@ -33,9 +33,9 @@ const CleaningServiceDetails = ({ CleaningServiceData }) => {
             {service.description1}
           </p>
           <img
-            src={service.image1}
+            src={service.image2}
             alt={service.title}
-            className="w-full max-h-80 object-cover rounded-lg mb-6"
+            className="w-full max-h-96 object-cover rounded-lg mb-6"
           />
           <p className="text-gray-600 leading-relaxed">
             {service.description2}
@@ -80,9 +80,9 @@ const CleaningServiceDetails = ({ CleaningServiceData }) => {
         {/* Image Section */}
         <div className="w-full lg:w-7/12 p-6">
           <img
-            src={service.image2}
+            src={service.image3}
             alt={service.title}
-            className="w-full max-h-80 object-cover mb-6 rounded-lg"
+            className="w-full max-h-96 object-cover mb-6 rounded-lg"
           />
         </div>
 

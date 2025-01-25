@@ -7,12 +7,12 @@ import { Autoplay } from "swiper/modules";
 
 const GallerySlider = () => {
   const images = [
-    "https://media.istockphoto.com/id/1417833187/photo/professional-cleaner-vacuuming-a-carpet.jpg?b=1&s=612x612&w=0&k=20&c=-hIxa-9UCDsDzdNrdRQI67WZvhrU34PKejODkGMi-jA=",
-    "https://st3.depositphotos.com/20363444/35577/i/450/depositphotos_355770670-stock-photo-cropped-view-cleaner-rubber-gloves.jpg",
-    "https://hellocleaners.co.uk/wp-content/uploads/2019/07/office-cleaning-hello-cleaners.jpeg",
-    "https://static01.nyt.com/images/2020/03/20/opinion/20Land/20Land-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
-    "https://img.freepik.com/free-photo/full-shot-people-cleaning-office_23-2150454568.jpg?semt=ais_hybrid",
-    "https://w0.peakpx.com/wallpaper/677/741/HD-wallpaper-rozy-reinik-ug-haftungsbeschr%EF%BF%BDnkt-cleaning-service-hamburg-cleaning-service-frankfurt-english-speaking-cleaners-deep-cleaning-services-thumbnail.jpg",
+    "/assets/gallery/k2.jpeg",
+    "/assets/gallery/k6.jpeg",
+    "/assets/gallery/k5.jpeg",
+    "/assets/gallery/k4.jpeg",
+    "/assets/gallery/k10.jpeg",
+    "/assets/gallery/k9.jpeg",
   ];
 
   return (
