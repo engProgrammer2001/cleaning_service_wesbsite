@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaYoutube, FaLock } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <footer className="py-8 relative bg-blue-100 text-slate-800">
+      <footer className="py-8 relative common-black-bg">
         <div className="container mx-auto px-4">
           {/* First Row with 4 Columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -15,7 +15,7 @@ const Footer = () => {
               <div>
                 <NavLink to="/">
                   <img
-                    src="/assets/logo/logo.png" 
+                    src="/assets/logo/logo.png"
                     alt="Logo"
                     className="w-24 rounded-full cursor-pointer"
                   />

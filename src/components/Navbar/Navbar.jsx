@@ -21,7 +21,7 @@ const Navbar = () => {
     setIsSubmenuOpen(false);
   };
   return (
-    <nav className="bg-blue-100 text-slate-800 relative z-50">
+    <nav className="common-blue-bg relative z-50">
       <div className="container mx-auto px-4 flex justify-between items-center py-2">
         <div className="text-2xl font-bold">
           <Link to={"/"}>
@@ -34,7 +34,7 @@ const Navbar = () => {
         </button>
         {/* Main Menu */}
         <ul
-          className={`fixed md:static top-0 left-0 w-full md:h-auto bg-blue-100 md:bg-transparent md:flex md:items-center md:space-x-6 md:py-0 px-3 font-semibold py-10 transform ${
+          className={`fixed md:static top-0 left-0 w-full md:h-auto common-blue-bg md:bg-transparent md:flex md:items-center md:space-x-6 md:py-0 px-3 font-semibold py-10 transform ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           } md:translate-x-0 transition-transform duration-500`}
         >
@@ -58,14 +58,14 @@ const Navbar = () => {
               Services ▼
             </button>
             <ul
-              className={`absolute bg-blue-100 border border-slate-800 text-sm mt-2 rounded shadow-md w-56 z-50 ${
+              className={`absolute common-blue-bg border border-slate-800 text-sm mt-2 rounded shadow-md w-56 z-50 ${
                 isSubmenuOpen ? "block" : "hidden"
               }`}
             >
               <li>
                 <Link
                   to="/cleaning-service"
-                  className="block px-4 border-b border-gray-900 py-2 hover:bg-gray-200 text-left"
+                  className="block px-4 border-b border-gray-900 py-2 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Cleaning Service
@@ -74,7 +74,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to="/painting-service"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Painting Service
@@ -82,8 +82,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/pest-service"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/pest-control-service"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Pest control Service
@@ -91,8 +91,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/civil-works"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/civil-work-service"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Civil works
@@ -100,8 +100,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/marble-polishing "
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/merble-policing-service"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Marble polishing
@@ -109,8 +109,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/bird-netting"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/bird-netting-service-details"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Bird netting
@@ -118,8 +118,8 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/plumber"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/plumber-service"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Plumber
@@ -127,11 +127,20 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/ electrician"
-                  className="block px-4 py-2 border-b border-gray-900 hover:bg-gray-200 text-left"
+                  to="/electrician-service"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
                   onClick={closeMenus}
                 >
                   Electrician
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/swimming-pool-cleaning"
+                  className="block px-4 py-2 border-b border-gray-900 hover:bg-blue-600 text-left"
+                  onClick={closeMenus}
+                >
+                  Swimming Pool Cleaing
                 </Link>
               </li>
             </ul>
@@ -181,10 +190,8 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <Link>+91 8765432434</Link>
+          <li className="border p-2 border-gray-700 rounded-lg">
+            <Link to="tel: 9538556080">+91 9538556080</Link>
           </li>
         </ul>
       </div>

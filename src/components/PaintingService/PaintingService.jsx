@@ -25,13 +25,13 @@ const PaintingService = () => {
         {PaintingServiceData.map((service) => (
           <div
             key={service.id}
-            className="bg-blue-100 text-slate-800 text-center p-4 rounded-lg cursor-pointer hover:bg-blue-200"
+            className="common-blue-bg text-center p-4 rounded-lg cursor-pointer hover:bg-blue-200"
             onClick={() => handleRedirect(service.path)}
           >
-            <div className="flex justify-center items-center text-yellow-500 text-5xl mb-2">
+            <div className="flex justify-center items-center bg-gray-100 p-6 text-[#00a5ea] rounded-full text-5xl mb-2">
               {service.icon}
             </div>
-            <div className="font-medium text-lg">{service.title}</div>
+            <div className="font-medium text-2xl">{service.title}</div>
           </div>
         ))}
       </div>

@@ -17,3 +17,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.common-blue-bg{
+  background-color: #00a5ea;
+  color: white;
+}
+.common-black-bg{
+  background-color: #061326;
+  color: white;
+}
+.common-text-color{
+  color: #035207;
+}

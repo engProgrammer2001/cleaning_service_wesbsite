@@ -22,17 +22,17 @@ const Service = () => {
           Bangalore.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-12">
         {ServicesData.map((service) => (
           <div
             key={service.id}
-            className="bg-blue-100 text-slate-800 text-center p-4 rounded-lg cursor-pointer hover:bg-blue-200"
+            className="common-blue-bg text-center p-4 rounded-lg cursor-pointer hover:bg-blue-600"
             onClick={() => handleRedirect(service.path)}
           >
-            <div className="flex justify-center items-center text-yellow-500 text-5xl mb-2">
+            <div className="flex bg-gray-100 p-6 text-[#00a5ea]  justify-center items-center rounded-full text-7xl mb-2">
               {service.icon}
             </div>
-            <div className="font-medium text-lg">{service.title}</div>
+            <div className="font-medium text-2xl">{service.title}</div>
           </div>
         ))}
       </div>
