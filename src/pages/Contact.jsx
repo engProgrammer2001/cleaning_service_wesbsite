@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -11,12 +11,61 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import FormServiceData from "../components/data/FormServiceData";
 
 const Contact = () => {
+  // Handle input changes
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+  // State for form data
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+  const [successMessage, setSuccessMessage] = useState("");
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "8a72b8b3-3dc1-4144-8cac-35e2252d592a",
+        ...formData,
+      }),
+    });
+
+    if (response.ok) {
+      setSuccessMessage("Your appointment request has been sent successfully!");
+      setFormData({
+        name: "",
+        number: "",
+        date: "",
+        timing: "",
+        service: "",
+        email: "",
+        message: "",
+      });
+      setTimeout(() => setSuccessMessage(""), 3000); // Clear message after 3 seconds
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  };
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative bg-gray-800 text-white h-[50vh]">
+      <div className="relative bg-slate-500 text-white h-[50vh]">
         <img
           src="https://img.freepik.com/free-photo/top-view-blue-monday-concept-composition-with-telephone_23-2149139102.jpg?t=st=1736578107~exp=1736581707~hmac=aa5f090b7c60df4e534add4223e015e84526629f4bab23d965f7c26e3969d8cc&w=1800"
           alt="Contact Us Background"
@@ -40,14 +89,15 @@ const Contact = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className=" mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Contact Form */}
-          <div>
-            <h2 className="text-3xl font-bold text-slate-800 hover:text-slate-900 mb-6">
+          <div className="max-w-lg mx-auto p-8 bg-white rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold text-[#ac00b7] hover:text-[#7e1186] mb-6">
               Get in Touch
             </h2>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
+              {/* Name Field */}
               <div>
                 <label
                   htmlFor="name"
@@ -58,57 +108,58 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="mt-1 text-indigo-800 font-semibold border p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Your Name"
                   required
                 />
               </div>
+
+              {/* Email Field */}
               <div>
                 <label
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email<span className="text-red-600">*</span>
+                  Email<span className="text-red-500">*</span>
                 </label>
                 <input
                   type="email"
                   id="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="mt-1 text-indigo-800 font-semibold border p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Your Email"
                   required
                 />
               </div>
+
               {/* Service Field */}
               <div>
-                <label className="block text-gray-700 mb-2" htmlFor="service">
-                  Service<span className="text-red-600">*</span>
+                <label
+                  htmlFor="service"
+                  className="block text-sm font-semibold mb-2 text-gray-700"
+                >
+                  Choose Service<span className="text-red-500">*</span>
                 </label>
                 <select
                   id="service"
-                  name="service"
-                  value={""}
-                  onChange={""}
-                  className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.service}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 >
                   <option value="">Select a service</option>
-                  <option value="Full House Cleaning">
-                    Full House Cleaning
-                  </option>
-                  <option value="Bathroom Cleaning">Bathroom Cleaning</option>
-                  <option value="Kitchen cleaning">Kitchen cleaning</option>
-                  <option value="Carpet cleaning">Carpet cleaning</option>
-                  <option value="Sofa cleaning">Sofa cleaning</option>
-                  <option value="Matress cleaning">Matress cleaning</option>
-                  <option value="Balcony cleaning">Balcony cleaning</option>
-                  <option value="Chair cleaning">Chair cleaning</option>
-                  <option value="Office cleaning">Office cleaning</option>
-                  <option value="Swiming pool cleaning">
-                    Swiming pool cleaning
-                  </option>
-                  <option value="Windows cleaning">Windows cleaning</option>
+                  {FormServiceData.map((service, index) => (
+                    <option key={index} value={service}>
+                      {service}
+                    </option>
+                  ))}
                 </select>
               </div>
+
+              {/* Message Field */}
               <div>
                 <label
                   htmlFor="message"
@@ -119,13 +170,17 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows="4"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="mt-1 text-indigo-800 font-semibold border p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                   placeholder="Your Message"
                 ></textarea>
               </div>
+
+              {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700"
+                className="w-full bg-[#ac00b7] text-white py-2 px-4 rounded-md hover:bg-[#7a0083]"
               >
                 Send Message
               </button>
@@ -135,33 +190,34 @@ const Contact = () => {
           {/* Contact Details */}
           <div className="lg:px-24 px-6 py-12">
             {/* Contact Information */}
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-3xl font-bold text-[#ac00b7] mb-6">
               Contact Information
             </h2>
             <ul className="space-y-4 text-gray-700">
               <li className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="text-green-600 text-2xl" />
                 <span>
-                  <strong>Address:</strong> 1234 Street Name, City, State,
-                  Country
+                  <strong>Address:</strong> Residing At No. 17, 4th Cross,
+                  Church Road, Murgeshpalya, Bangalore-560017. Hereinafter
+                  called as the 'OWNERS/LESSORS' of the One Part
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="text-blue-900 text-2xl" />
                 <span>
-                  <strong>Phone:</strong> +1 (123) 456-7890
+                  <strong>Phone:</strong> +91 9538556080
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaWhatsapp className="text-green-500 text-2xl" />
                 <span>
-                  <strong>Whatsapp:</strong> +1 (123) 456-7890
+                  <strong>Whatsapp:</strong> +91 9538556080
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="text-red-500 text-2xl" />
                 <span>
-                  <strong>Email:</strong> contact@example.com
+                  <strong>Email:</strong> info@example.com
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -173,10 +229,10 @@ const Contact = () => {
             </ul>
 
             {/* Social Media Links */}
-            <h3 className="text-2xl font-bold text-gray-900 my-6">
+            <h3 className="text-2xl font-bold text-[#ac00b7] my-6">
               Social Media Links
             </h3>
-            <ul className="flex flex-row space-x-5 text-gray-900">
+            <ul className="flex flex-row space-x-5 text-[#ac00b7]">
               <li>
                 <Link
                   to="/instagram"
@@ -218,11 +274,11 @@ const Contact = () => {
         </div>
       </div>
       <div className="mt-8 bg-gray-100 p-4">
-        <h3 className="text-4xl py-2 font-bold text-gray-900 mb-4 text-center">
+        <h3 className="text-4xl py-2 font-bold text-[#ac00b7] mb-4 text-center">
           Our Location
         </h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093647!2d144.95373531531906!3d-37.81627937975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d8c3e3267e0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1618228012765!5m2!1sen!2sau"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4110.989916537394!2d77.6525704750762!3d12.957326687356714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2sin!4v1738049370462!5m2!1sen!2sin"
           title="Google Maps"
           width={"100%"}
           className="w-full h-96 shadow-lg rounded-lg"

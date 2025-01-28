@@ -62,7 +62,7 @@ const PaintingService = () => {
             <div className="p-4">
               <button
                 onClick={() => handleClick(service.id)}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+                className="w-full bg-[#ac00b7] hover:bg-[#7d0086] text-white font-bold py-2 px-4 rounded-full"
               >
                 View Details
               </button>

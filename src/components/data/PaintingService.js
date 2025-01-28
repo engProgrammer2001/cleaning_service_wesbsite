@@ -2,10 +2,9 @@ const paintingServices = [
   {
     id: 1,
     title: "Repainting",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Paint-Service2.jpg",
+    image2: "/assets/painting/Repainting3.webp",
+    image3: "/assets/painting/painting.webp",
     shortDescription: "Bringing vibrant colors back to your walls.",
     description:
       "Our Repainting service is designed to refresh the look of your home or office. Whether you want to change the color or simply restore the existing one, our professional team uses high-quality paints to ensure a long-lasting and smooth finish. We handle all surface preparations, including cleaning and priming, to guarantee the best results. With a wide range of colors and finishes, you can easily transform any room into a stylish and inviting space.",
@@ -25,10 +24,9 @@ const paintingServices = [
   {
     id: 2,
     title: "Interior Painting",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Interior Painting3.avif",
+    image2: "/assets/painting/Interior Painting2.jpeg",
+    image3: "/assets/painting/Interior Painting.jpeg",
     shortDescription: "Transform the interiors with fresh, vibrant colors.",
     description:
       "Our Interior Painting service focuses on enhancing the ambiance of your living spaces. We use premium paints and professional techniques to give your interiors a fresh and elegant look. From bedrooms and living rooms to kitchens and offices, our team ensures that every wall and surface is painted to perfection. With a variety of colors and finishes to choose from, we help you create the ideal atmosphere for your home or workplace.",
@@ -48,10 +46,9 @@ const paintingServices = [
   {
     id: 3,
     title: "Exterior Painting",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Exterior Painting3.jpg",
+    image2: "/assets/painting/Exterior Painting2.webp",
+    image3: "/assets/painting/Exterior Painting.jpg",
     shortDescription: "Protect and beautify the exterior of your property.",
     description:
       "Our Exterior Painting service is designed to give your property a fresh, durable look while protecting it from the elements. We use high-quality, weather-resistant paints that withstand harsh conditions, ensuring that your home or building maintains its beauty for years. Our team handles all aspects of the job, from surface cleaning to priming and painting, providing a flawless finish that enhances your property's curb appeal.",
@@ -71,10 +68,9 @@ const paintingServices = [
   {
     id: 4,
     title: "Waterproofing",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Waterproofing3.png",
+    image2: "/assets/painting/Waterproofing.webp",
+    image3: "/assets/painting/Waterproofing2.jpg",
     shortDescription:
       "Prevent water damage with effective waterproofing solutions.",
     description:
@@ -95,10 +91,9 @@ const paintingServices = [
   {
     id: 5,
     title: "Grouting",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Grouting.webp",
+    image2: "/assets/painting/Grouting2.jpeg",
+    image3: "/assets/painting/Grouting3.webp",
     shortDescription:
       "Restore the integrity and aesthetic of your tiled surfaces.",
     description:
@@ -119,10 +114,9 @@ const paintingServices = [
   {
     id: 6,
     title: "Wood Polishing",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/painting/Wood Polishing3.jpg",
+    image2: "/assets/painting/Wood Polishing2.jpg",
+    image3: "/assets/painting/Wood Polishing.jpg",
     shortDescription: "Bring back the natural beauty of your wooden surfaces.",
     description:
       "Our Wood Polishing service is designed to restore the elegance and shine of your wooden furniture, flooring, and surfaces. We use high-quality wood polish and professional techniques to ensure a flawless finish. Whether it's a delicate antique piece or a modern wooden installation, our team carefully enhances the wood's natural texture and color, leaving it looking new and vibrant.",

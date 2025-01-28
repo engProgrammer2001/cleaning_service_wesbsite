@@ -6,9 +6,9 @@ const Blog = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative bg-zinc-800 text-white h-[50vh]">
+      <div className="relative bg-[#ac00b7] text-white h-52 lg:h-[70vh]">
         <img
-          src="https://www.thecleaning.company/wp-content/uploads/2024/05/Carpet-1.jpg"
+          src="/assets/gallery/k14.jpeg"
           alt="About us background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -16,19 +16,19 @@ const Blog = () => {
           <nav className="flex space-x-4 text-sm">
             <Link
               to="/"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              className="text-white hover:text-white font-bold"
             >
               Home
             </Link>
-            <span className="text-slate-800 font-bold">/</span>
+            <span className="text-white hover:text-white font-bold">/</span>
             <Link
               to="/blog"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              className="text-white hover:text-white font-bold"
             >
               Blog
             </Link>
           </nav>
-          <h1 className="text-4xl font-bold mt-4 text-slate-800 hover:text-slate-900">
+          <h1 className="text-4xl font-bold mt-4 text-white hover:text-white">
             Our Blogs
           </h1>
         </div>
@@ -47,12 +47,12 @@ const Blog = () => {
                   className="w-full h-60 object-cover"
                 />
                 <div className="p-6">
-                  <h2 className="text-xl font-bold text-gray-800">
+                  <h2 className="text-xl font-bold text-[#ac00b7]">
                     {blog.title}
                   </h2>
                   <p className="text-sm text-gray-500 mb-4">{blog.date}</p>
                   <p className="text-gray-700 mb-4">{blog.shortDescription}</p>
-                  <button className="text-slate-800  bg-blue-100 w-full rounded-full px-4 py-2 hover:underline">
+                  <button className="text-white  bg-[#ac00b7] w-full rounded-full px-4 py-2 hover:underline">
                     <Link to={`/blog-detail/${blog.id}`}>Read More</Link>
                   </button>
                 </div>

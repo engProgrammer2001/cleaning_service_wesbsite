@@ -5,7 +5,7 @@ const AboutComponents = () => {
     <div className="flex flex-col lg:flex-row items-center justify-center lg:p-12 bg-blue-50">
       {/* Left Content */}
       <div className="lg:w-1/2 w-full text-center lg:text-left space-y-4 p-4">
-        <h1 className="text-3xl lg:text-4xl font-bold text-gray-800">
+        <h1 className="text-3xl lg:text-4xl font-bold text-[#ac00b7]">
           About Us
         </h1>
         <p className="text-gray-600">
@@ -41,28 +41,28 @@ const AboutComponents = () => {
       <div className="grid grid-cols-2 gap-4 p-4">
         <div className="flex justify-center">
           <img
-            src="/assets/gallery/k4.jpeg"
+            src="/assets/gallery/k20.jpg"
             alt="cleaning service"
             className="rounded-lg shadow-lg max-w-full h-96"
           />
         </div>
         <div className="flex justify-center">
           <img
-            src="/assets/gallery/k9.jpeg"
+            src="/assets/gallery/k21.jpg"
             alt=""
             className="rounded-lg shadow-lg max-w-full h-96"
           />
         </div>
         <div className="flex justify-center">
           <img
-            src="/assets/gallery/k2.jpeg"
+            src="/assets/gallery/k22.jpg"
             alt="bathroom clean images"
             className="rounded-lg shadow-lg max-w-full h-96"
           />
         </div>
         <div className="flex justify-center">
           <img
-            src="/assets/gallery/k5.jpeg"
+            src="/assets/gallery/k23.jpg"
             alt="fourth images"
             className="rounded-lg shadow-lg max-w-full h-96"
           />

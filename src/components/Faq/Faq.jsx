@@ -45,14 +45,14 @@ const Faq = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6 py-8">
-      <h2 className="text-3xl text-slate-800 font-bold text-center mb-6">
+      <h2 className="text-3xl text-[#ac00b7] font-bold text-center mb-6">
         Frequently Asked Questions
       </h2>
       <div className="space-y-4">
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="bg-blue-100 text-slate-800 rounded-lg shadow-md"
+            className="bg-[#ac00b7] text-white rounded-lg shadow-md"
           >
             <div
               className="p-4 cursor-pointer flex justify-between items-center"
@@ -69,7 +69,7 @@ const Faq = () => {
               }`}
             >
               {openIndex === index && (
-                <div className="p-4 border-t border-gray-700 text-slate-700">
+                <div className="p-4 border-t border-gray-700 text-white">
                   <p>{faq.answer}</p>
                 </div>
               )}

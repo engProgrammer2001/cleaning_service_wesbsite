@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import swimmingPoolCleaningService from "../components/data/swimmingPoolCleaningService";
+import BookYourAppointment from "../components/BookYourAppointment/BookYourAppointment";
 
 const SwimmingPoolCleaningService = () => {
   return (
@@ -8,7 +9,7 @@ const SwimmingPoolCleaningService = () => {
       {/* Hero Section */}
       <div className="relative bg-zinc-800 text-white h-[50vh]">
         <img
-          src="/assets/pestcontrol/pestcontrol.webp"
+          src="/assets/gallery/Swimming Pool Cleaning4.jpg"
           alt="Swimming Pool Cleaning Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -16,19 +17,19 @@ const SwimmingPoolCleaningService = () => {
           <nav className="flex space-x-4 text-sm">
             <Link
               to="/"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              className="text-[#ac00b7] hover:text-[#ac00b7] font-bold"
             >
               Home
             </Link>
-            <span className="text-slate-800 font-bold">/</span>
+            <span className="text-[#ac00b7] font-bold">/</span>
             <Link
               to="/swimming-pool-cleaning"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              className="text-[#ac00b7] hover:text-[#ac00b7] font-bold"
             >
               Swimming Pool Cleaning
             </Link>
           </nav>
-          <h1 className="text-4xl font-bold mt-4 text-slate-800 hover:text-slate-900">
+          <h1 className="text-4xl font-bold mt-4 text-[#ac00b7] hover:text-[#ac00b7]">
             Swimming Pool Cleaning Service
           </h1>
         </div>
@@ -37,7 +38,7 @@ const SwimmingPoolCleaningService = () => {
       {/* Main Content Section */}
       <div className="px-4 py-6 md:px-10 lg:px-20">
         {/* Title Section */}
-        <h1 className="text-3xl font-bold text-center text-gray-800 mb-4">
+        <h1 className="text-3xl font-bold text-center text-[#ac00b7] mb-4">
           {swimmingPoolCleaningService.title}
         </h1>
         <p className="text-center text-gray-600 mb-6">
@@ -74,7 +75,7 @@ const SwimmingPoolCleaningService = () => {
 
         {/* Benefits Section */}
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-4 text-[#ac00b7]">
             Benefits
           </h2>
           <ul className="list-disc list-inside space-y-2">
@@ -84,6 +85,9 @@ const SwimmingPoolCleaningService = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div>
+          <BookYourAppointment />
         </div>
       </div>
     </>

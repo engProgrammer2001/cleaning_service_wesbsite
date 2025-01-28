@@ -2,10 +2,9 @@ const ElectricianServicesData = [
   {
     id: 1,
     title: "Residential Electrician Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/ElectronincServices/Electrician Services1.jpg",
+    image2: "/assets/ElectronincServices/ElectricianServices2.jpeg",
+    image3: "/assets/ElectronincServices/Electroninc Services.jpg",
     shortDescription: "Expert electrical solutions for your home.",
     description:
       "Our Residential Electrician Service ensures your home’s electrical systems are safe and efficient. We provide a range of services, from installations to repairs, tailored to residential needs.",
@@ -25,10 +24,9 @@ const ElectricianServicesData = [
   {
     id: 2,
     title: "Commercial Electrician Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/ElectronincServices/Commercial Electrician Service.jpg",
+    image2: "/assets/ElectronincServices/Commercial Electrician Service1.jpeg",
+    image3: "/assets/ElectronincServices/Commercial Electrician Service3.jpg",
     shortDescription: "Reliable electrical solutions for commercial spaces.",
     description:
       "Our Commercial Electrician Service is designed to meet the unique requirements of businesses. From large-scale installations to routine maintenance, we have the expertise to handle it all.",
@@ -48,10 +46,9 @@ const ElectricianServicesData = [
   {
     id: 3,
     title: "Industrial Electrician Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/ElectronincServices/Industrial Electrician Service.jpg",
+    image2: "/assets/ElectronincServices/Industrial Electrician Service1.jpg",
+    image3: "/assets/ElectronincServices/Industrial Electrician Service3.jpg",
     shortDescription: "Comprehensive electrical services for industries.",
     description:
       "Our Industrial Electrician Service provides tailored solutions for factories, plants, and warehouses. From large-scale installations to equipment maintenance, we ensure your operations run smoothly.",
@@ -71,10 +68,9 @@ const ElectricianServicesData = [
   {
     id: 4,
     title: "Emergency Electrician Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/ElectronincServices/Emergency Electrician Service.jpeg",
+    image2: "/assets/ElectronincServices/Emergency Electrician Service2.jpeg",
+    image3: "/assets/ElectronincServices/Emergency Electrician Service3.jpeg",
     shortDescription: "24/7 emergency electrical repairs and solutions.",
     description:
       "Our Emergency Electrician Service provides immediate assistance for unexpected electrical issues. Available 24/7, our team ensures your safety and restores power quickly.",
@@ -94,10 +90,9 @@ const ElectricianServicesData = [
   {
     id: 5,
     title: "Smart Home Electrician Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/ElectronincServices/Smart Home Electrician Service.jpeg",
+    image2: "/assets/ElectronincServices/Smart Home Electrician Service2.webp",
+    image3: "/assets/ElectronincServices/Smart Home Electrician Service3.jpeg",
     shortDescription: "Expert electrical solutions for smart home systems.",
     description:
       "Our Smart Home Electrician Service helps you integrate and maintain modern smart home technologies. From automation to smart lighting, we ensure seamless connectivity.",

@@ -1,10 +1,10 @@
 const swimmingPoolCleaningService = {
     id: 1,
     title: "Swimming Pool Cleaning",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/wimming Pool Cleaning.jpeg",
+    image1: "/assets/gallery/wimming Pool Cleaning1.png",
+    image2: "/assets/gallery/wimming Pool Cleaning3.jpeg",
+    image3: "/assets/gallery/Swimming Pool Cleaning4.jpg",
     shortDescription: "Keep your pool sparkling clean and safe for use.",
     description:
       "Our Swimming Pool Cleaning service ensures your pool remains clean, hygienic, and ready for use at all times. We specialize in removing debris, algae, and other contaminants to maintain crystal-clear water and a well-functioning pool system.",

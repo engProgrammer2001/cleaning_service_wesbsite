@@ -2,10 +2,9 @@ const PlumberServicesData = [
   {
     id: 1,
     title: "Residential Plumbing Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/PlumberServices/Plumber Services.jpg",
+    image2: "/assets/PlumberServices/Plumber Services1.jpg",
+    image3: "/assets/PlumberServices/Plumber Services2.jpg",
     shortDescription: "Expert plumbing solutions for your home.",
     description:
       "Our Residential Plumbing Service ensures your home’s plumbing systems run smoothly. From leak repairs to new installations, we provide comprehensive solutions.",
@@ -25,10 +24,9 @@ const PlumberServicesData = [
   {
     id: 2,
     title: "Commercial Plumbing Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/PlumberServices/Commercial Plumbing Service.jpg",
+    image2: "/assets/PlumberServices/Commercial Plumbing Service1.jpg",
+    image3: "/assets/PlumberServices/Commercial Plumbing Service3.avif",
     shortDescription: "Efficient plumbing solutions for businesses.",
     description:
       "Our Commercial Plumbing Service is tailored to meet the needs of offices, retail spaces, and industrial facilities. We handle large-scale plumbing installations and repairs.",
@@ -48,10 +46,9 @@ const PlumberServicesData = [
   {
     id: 3,
     title: "Emergency Plumbing Service",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/PlumberServices/Emergency Plumbing Service.jpg",
+    image2: "/assets/PlumberServices/Emergency Plumbing Service1.jpg",
+    image3: "/assets/PlumberServices/Emergency Plumbing Service2.jpg",
     shortDescription: "24/7 plumbing repairs for urgent issues.",
     description:
       "Our Emergency Plumbing Service provides immediate assistance for unexpected plumbing problems. Available 24/7, we respond quickly to minimize damage.",

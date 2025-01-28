@@ -28,21 +28,21 @@ const Hero = () => {
       >
         <SwiperSlide>
           <img
-            src="/assets/gallery/k7.jpeg"
+            src="/assets/gallery/k13.jpeg"
             alt="Slider 1"
             className="w-full h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="/assets/gallery/k8.jpeg"
+            src="/assets/gallery/k14.jpeg"
             alt="Slider 2"
             className="w-full h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            src="/assets/gallery/k11.jpeg"
+            src="/assets/gallery/k15.jpeg"
             alt="Slider 3"
             className="w-full h-full object-cover"
           />

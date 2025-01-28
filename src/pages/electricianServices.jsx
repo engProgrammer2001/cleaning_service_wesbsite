@@ -14,9 +14,9 @@ const ElectricianServices = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative bg-zinc-800 text-white h-[50vh]">
+      <div className="relative bg-zinc-800 text-white h-60 lg:h-[70vh]">
         <img
-          src="https://www.santacleaningservices.com/img/service/2-1.jpg"
+          src="/assets/ElectronincServices/Electrician Services1.jpg"
           alt="About us background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -62,7 +62,7 @@ const ElectricianServices = () => {
             <div className="p-4">
               <button
                 onClick={() => handleClick(service.id)}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+                className="w-full bg-[#ac00b7] hover:bg-[#7d0086] text-white font-bold py-2 px-4 rounded-full"
               >
                 View Details
               </button>

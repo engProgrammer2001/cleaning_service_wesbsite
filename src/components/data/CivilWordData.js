@@ -2,10 +2,9 @@ const CivilWordData = [
   {
     id: 1,
     title: "Tiles/Stones Replacement",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/CivilWork/Tiles:Stones Replacement.png",
+    image2: "/assets/CivilWork/Tiles:Stones Replacement1.jpg",
+    image3: "/assets/CivilWork/Tiles:Stones Replacement2.jpg",
     shortDescription: "Upgrade your space with new tiles and stones.",
     description:
       "Our Tiles/Stones Replacement service is designed to refresh the look and functionality of your floors and walls. Whether it's a damaged tile or outdated stonework, our skilled team ensures precise removal and installation of high-quality materials. With a range of options, you can choose the perfect design to enhance your space.",
@@ -25,10 +24,9 @@ const CivilWordData = [
   {
     id: 2,
     title: "Kitchen/Bathroom Remodeling",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/CivilWork/Kitchen:Bathroom Remodeling.avif",
+    image2: "/assets/CivilWork/Kitchen:Bathroom Remodeling2.jpg",
+    image3: "/assets/CivilWork/Kitchen:Bathroom Remodeling3.webp",
     shortDescription:
       "Transform your kitchen or bathroom into a modern masterpiece.",
     description:
@@ -49,10 +47,9 @@ const CivilWordData = [
   {
     id: 3,
     title: "Replastering",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/CivilWork/Replastering1.png",
+    image2: "/assets/CivilWork/Replastering2.webp",
+    image3: "/assets/CivilWork/Replastering3.jpg",
     shortDescription:
       "Revive your walls with our professional replastering services.",
     description:
@@ -73,10 +70,9 @@ const CivilWordData = [
   {
     id: 4,
     title: "Crack Filling",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/CivilWork/Crack Filling.webp",
+    image2: "/assets/CivilWork/Crack Filling1.jpg",
+    image3: "/assets/CivilWork/Crack Filling3.jpeg",
     shortDescription: "Seal and protect your walls with expert crack filling.",
     description:
       "Our Crack Filling service ensures that wall and ceiling cracks are expertly sealed to prevent further damage. Using premium materials, we restore the structural integrity and appearance of your surfaces. Whether it's small cracks or larger issues, we handle them with precision.",

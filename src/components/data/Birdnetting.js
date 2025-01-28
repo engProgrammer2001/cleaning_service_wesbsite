@@ -1,10 +1,10 @@
 const birdNettingService = {
   id: 1,
   title: "Bird Netting",
-  image: "https://via.placeholder.com/150",
-  image1: "https://via.placeholder.com/150",
-  image2: "https://via.placeholder.com/150",
-  image3: "https://via.placeholder.com/150",
+  image: "/assets/BirdNetting/Bird Netting4.jpg",
+  image1: "/assets/BirdNetting/ Bird Netting.webp",
+  image2: "/assets/BirdNetting/ Bird Netting3.jpg",
+  image3: "/assets/BirdNetting/ Bird Netting1.jpg",
   shortDescription:
     "Effective and durable bird netting solutions for your property.",
   description:

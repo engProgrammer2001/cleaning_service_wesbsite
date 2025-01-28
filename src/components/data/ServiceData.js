@@ -9,7 +9,7 @@ const ServicesData = [
     id: 1,
     title: "Cleaning Service",
     icon: <FaBroom />,
-    path: "/services/cleaning",
+    path: "/cleaning-service",
   },
   {
     id: 2,

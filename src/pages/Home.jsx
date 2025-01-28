@@ -7,6 +7,7 @@ import Faq from "../components/Faq/Faq";
 import Testimonials from "../components/Testimonials/Testimonials";
 import EnqueryForm from "../components/EnqueryForm/EnqueryForm";
 import GallerySlider from "../components/GallerySlider/GallerySlider";
+import TimeFrame from "../components/TimeFrame/TimeFrame";
 
 const Home = () => {
   return (
@@ -16,10 +17,17 @@ const Home = () => {
       <Service />
       <PaintingService />
       <EnqueryForm />
-      <Faq />
+      <div>
+        <div>
+          <TimeFrame />
+        </div>
+        <div>
+          <Faq />
+        </div>
+      </div>
       {/* testimonial section  */}
       <div className="bg-blue-100 p-6 my-4">
-        <h2 className="text-center text-3xl text-slate-800 font-bold underline">
+        <h2 className="text-center text-3xl text-[#ac00b7] font-bold underline">
           What Our Clients Say
         </h2>
         <div className="flex flex-col lg:flex-row my-10 gap-6">

@@ -24,8 +24,6 @@ const ReferFriend = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted", formData);
-    // Add form submission logic here
   };
 
   return (
@@ -45,7 +43,7 @@ const ReferFriend = () => {
       <div className="flex flex-col my-8 md:flex-row items-center md:items-start justify-between gap-4 p-4">
         {/* Left Side: Text */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-4 p-2">
-          <h1 className="text-xl md:text-3xl font-bold text-gray-900">
+          <h1 className="text-xl md:text-3xl font-bold text-[#ac00b7]">
             Professional Home Cleaning Services Refer
           </h1>
           <p className="text-gray-700">
@@ -91,32 +89,30 @@ const ReferFriend = () => {
             </li>
           </ul>
         </div>
-
         {/* Right Side: Images */}
         <div className="w-full md:w-1/2 flex flex-wrap gap-4 justify-center">
           {/* First Row */}
           <div className="w-full flex justify-center gap-4">
             <img
-              src="https://media.istockphoto.com/id/1365606525/photo/shot-of-a-bucket-of-cleaning-supplies.jpg?s=612x612&w=0&k=20&c=_Xz3e-_WGlQC2zXstHaK_AI9N76LNag_KbRioNlM1hQ="
+              src="/assets/gallery/k21.jpg"
               alt="Placeholder 1"
               className="w-1/2 rounded shadow"
             />
             <img
-              src="https://www.healthyhomesutah.com/wp-content/uploads/Professional-House-Cleaning-Services-in-North-Ogden-Utah.jpg"
+              src="/assets/gallery/k27.jpg"
               alt="Placeholder 2"
               className="w-1/2 rounded shadow"
             />
           </div>
-
           {/* Second Row */}
           <div className="w-full flex justify-center gap-4">
             <img
-              src="https://nebula.wsimg.com/ac7d6f193fe43774daeb26b695c50718?AccessKeyId=45796D6E8BD20ECEBF25&disposition=0&alloworigin=1"
+              src="/assets/gallery/k23.jpg"
               alt="Placeholder 3"
               className="w-1/2 rounded shadow"
             />
             <img
-              src="https://media.istockphoto.com/id/1292647902/photo/the-warning-signs-cleaning-in-process-the-floor-of-the-building-and-janitorial-car-parked-in.jpg?s=612x612&w=0&k=20&c=ehX_KYmkrb8xTsnD1idUwFKB8CP5JyioHIewOUx40Ts="
+              src="/assets/gallery/k28.jpg"
               alt="Placeholder 4"
               className="w-1/2 rounded shadow"
             />
@@ -129,7 +125,7 @@ const ReferFriend = () => {
           onSubmit={handleSubmit}
           className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md"
         >
-          <h2 className="text-4xl font-semibold mb-6 text-center text-slate-700">
+          <h2 className="text-4xl font-semibold mb-6 text-center text-[#ac00b7]">
             Refer Your Friend
           </h2>
           <hr className="my-12" />
@@ -269,7 +265,7 @@ const ReferFriend = () => {
           <div className="mt-6 flex justify-center">
             <button
               type="submit"
-              className="bg-indigo-600 w-full rounded-full text-white px-6 py-2 text-lg font-medium hover:bg-indigo-700"
+              className="bg-[#ac00b7] w-full rounded-full text-white px-6 py-2 text-lg font-medium hover:bg-[#800089]"
             >
               Submit
             </button>

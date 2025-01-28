@@ -7,18 +7,20 @@ import { Autoplay } from "swiper/modules";
 
 const GallerySlider = () => {
   const images = [
-    "/assets/gallery/k2.jpeg",
-    "/assets/gallery/k6.jpeg",
-    "/assets/gallery/k5.jpeg",
-    "/assets/gallery/k4.jpeg",
-    "/assets/gallery/k10.jpeg",
-    "/assets/gallery/k9.jpeg",
+    "/assets/gallery/k21.jpg",
+    "/assets/gallery/k20.jpg",
+    "/assets/gallery/k23.jpg",
+    "/assets/gallery/k22.jpg",
+    "/assets/gallery/k24.jpg",
+    "/assets/gallery/k26.jpg",
+    "/assets/gallery/k27.jpg",
+    "/assets/gallery/k28.jpg",
   ];
 
   return (
     <>
       <div className="p-4 max-w-7xl mx-auto">
-        <h1 className="text-center text-4xl text-slate-800 font-bold underline">
+        <h1 className="text-center text-4xl text-[#ac00b7] font-bold underline">
           Some Latest Complete Work{" "}
         </h1>
       </div>

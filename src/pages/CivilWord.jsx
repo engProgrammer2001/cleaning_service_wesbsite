@@ -12,9 +12,9 @@ const CivilWork = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="relative bg-zinc-800 text-white h-[50vh]">
+      <div className="relative bg-zinc-800 text-white h-60 lg:h-[70vh]">
         <img
-          src="/assets/pestcontrol/pestcontrol.webp"
+          src="/assets/gallery/k17.jpeg"
           alt="Pest Control Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -22,20 +22,20 @@ const CivilWork = () => {
           <nav className="flex space-x-4 text-sm">
             <Link
               to="/"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              className="text-white hover:text-gray-100 font-bold"
             >
               Home
             </Link>
-            <span className="text-slate-800 font-bold">/</span>
+            <span className="text-white hover:text-gray-100 font-bold">/</span>
             <Link
-              to="/pest-control"
-              className="text-slate-800 hover:text-slate-900 font-bold"
+              to="/civil-work-service"
+              className="text-white hover:text-gray-100 font-bold"
             >
-              Pest Control
+              Civil Work
             </Link>
           </nav>
-          <h1 className="text-4xl font-bold mt-4 text-slate-800 hover:text-slate-900">
-            All Pest Control Services
+          <h1 className="text-4xl font-bold mt-4 text-white hover:text-gray-100">
+            Civil Work Service
           </h1>
         </div>
       </div>
@@ -61,7 +61,7 @@ const CivilWork = () => {
             <div className="p-4">
               <button
                 onClick={() => handleClick(service.id)}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+                className="w-full bg-[#ac00b7] hover:bg-[#7d0086] text-white font-bold py-2 px-4 rounded-full"
               >
                 View Details
               </button>

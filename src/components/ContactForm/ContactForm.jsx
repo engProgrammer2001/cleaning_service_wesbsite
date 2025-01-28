@@ -24,13 +24,12 @@ const ContactForm = () => {
   return (
     <div className="flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-md lg:max-w-5xl">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Us</h2>
         <form onSubmit={handleSubmit}>
           {/* Name and Number Fields on Large Devices in a Single Row */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             {/* Name Field */}
             <div>
-              <label className="block text-gray-700 mb-2" htmlFor="name">
+              <label className="block text-gray-700 mb-2 text-lg font-bold" htmlFor="name">
                 Name
               </label>
               <input
@@ -46,7 +45,7 @@ const ContactForm = () => {
             </div>
             {/* Number Field */}
             <div>
-              <label className="block text-gray-700 mb-2" htmlFor="number">
+              <label className="block text-gray-700 mb-2 text-lg font-bold" htmlFor="number">
                 Phone Number
               </label>
               <input
@@ -65,7 +64,7 @@ const ContactForm = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             {/* Email Field */}
             <div>
-              <label className="block text-gray-700 mb-2" htmlFor="email">
+              <label className="block text-gray-700 mb-2 text-lg font-bold" htmlFor="email">
                 Email
               </label>
               <input
@@ -82,7 +81,7 @@ const ContactForm = () => {
 
             {/* Service Field */}
             <div>
-              <label className="block text-gray-700 mb-2" htmlFor="service">
+              <label className="block text-gray-700 mb-2 text-lg font-bold" htmlFor="service">
                 Service
               </label>
               <select
@@ -113,7 +112,7 @@ const ContactForm = () => {
 
           {/* Data Field (Message) */}
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2" htmlFor="data">
+            <label className="block text-gray-700 mb-2 text-lg font-bold" htmlFor="data">
               Additional Information
             </label>
             <textarea
@@ -131,7 +130,7 @@ const ContactForm = () => {
           <div>
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white p-3 rounded-full font-semibold hover:bg-blue-600 transition-all"
+              className="w-full bg-[#ac00b7] text-white p-3 rounded-full font-semibold  transition-all"
             >
               Submit
             </button>

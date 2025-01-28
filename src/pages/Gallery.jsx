@@ -4,48 +4,138 @@ import GallerySlider from "../components/GallerySlider/GallerySlider";
 const Gallery = () => {
   const businessImages = [
     {
-      id: 1,
-      src: "https://media.istockphoto.com/id/1365606525/photo/shot-of-a-bucket-of-cleaning-supplies.jpg?s=612x612&w=0&k=20&c=_Xz3e-_WGlQC2zXstHaK_AI9N76LNag_KbRioNlM1hQ=",
-      alt: "Office Space",
-    },
-    {
       id: 2,
-      src: "https://www.healthyhomesutah.com/wp-content/uploads/Professional-House-Cleaning-Services-in-North-Ogden-Utah.jpg",
+      src: "/assets/gallery/k2.jpeg",
       alt: "Team Meeting",
     },
     {
       id: 3,
-      src: "https://nebula.wsimg.com/ac7d6f193fe43774daeb26b695c50718?AccessKeyId=45796D6E8BD20ECEBF25&disposition=0&alloworigin=1",
+      src: "/assets/gallery/k17.jpeg",
       alt: "Product Showcase",
     },
     {
       id: 4,
-      src: "https://media.istockphoto.com/id/1292647902/photo/the-warning-signs-cleaning-in-process-the-floor-of-the-building-and-janitorial-car-parked-in.jpg?s=612x612&w=0&k=20&c=ehX_KYmkrb8xTsnD1idUwFKB8CP5JyioHIewOUx40Ts=",
+      src: "/assets/gallery/k4.jpeg",
       alt: "Client Interaction",
     },
     {
       id: 5,
-      src: "https://www.nsg-inc.com/wp-content/uploads/2020/09/Why-Should-I-Change-My-Commercial-Janitorial-Service.jpg",
+      src: "/assets/gallery/k5.jpeg",
       alt: "Company Event",
     },
     {
       id: 6,
-      src: "https://hmhhospitalityservices.com/wp-content/uploads/2024/10/hmh-gallery-9-1067x800.webp",
+      src: "/assets/gallery/k6.jpeg",
       alt: "Workspace",
     },
     {
       id: 7,
-      src: "https://img.freepik.com/premium-photo/close-up-housekeeper-holding-modern-washing-vacuum-cleaner-cleaning-dirty-sofa-with-professionally-detergent-professional-springclean-home-concept_130111-3787.jpg?semt=ais_hybrid",
+      src: "/assets/gallery/k7.jpeg",
       alt: "Workspace",
     },
     {
       id: 8,
-      src: "https://eu-images.contentstack.com/v3/assets/blt9ca8222b5acaa556/blt6cc2bba866b78356/6539fb431e99383321db122c/how-to-give-yourtoilet-a-daily-clean.jpeg?width=954&height=636&format=jpg&quality=80",
+      src: "/assets/gallery/k8.jpeg",
       alt: "BathRoom Cleaning",
     },
     {
       id: 9,
-      src: "https://5.imimg.com/data5/KG/DC/GQ/SELLER-5976783/swimming-pool-cleaning-services-500x500.jpg",
+      src: "/assets/gallery/k9.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 10,
+      src: "/assets/gallery/k10.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 11,
+      src: "/assets/gallery/k11.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 12,
+      src: "/assets/gallery/k12.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 13,
+      src: "/assets/gallery/k13.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 14,
+      src: "/assets/gallery/k14.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 15,
+      src: "/assets/gallery/k9.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 16,
+      src: "/assets/gallery/k15.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 18,
+      src: "/assets/gallery/k16.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 19,
+      src: "/assets/gallery/k18.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 20,
+      src: "/assets/gallery/k20.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 19,
+      src: "/assets/gallery/k18.jpeg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 20,
+      src: "/assets/gallery/k20.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 21,
+      src: "/assets/gallery/k21.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 22,
+      src: "/assets/gallery/k22.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 23,
+      src: "/assets/gallery/k23.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 24,
+      src: "/assets/gallery/k24.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 25,
+      src: "/assets/gallery/k27.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 26,
+      src: "/assets/gallery/k26.jpg",
+      alt: "Swimming Pool Cleaning",
+    },
+    {
+      id: 27,
+      src: "/assets/gallery/k27.jpg",
       alt: "Swimming Pool Cleaning",
     },
   ];
@@ -74,7 +164,7 @@ const Gallery = () => {
   return (
     <>
       <div className="bg-gray-100 py-8 px-4">
-        <h1 className="text-3xl font-bold text-center mb-6 text-gray-800">
+        <h1 className="text-3xl font-bold text-center mb-6 text-[#ac00b7]">
           Our Business Gallery
         </h1>
         <p className="text-center text-gray-600 mb-10">
@@ -86,7 +176,7 @@ const Gallery = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-64 object-cover rounded-lg shadow-lg cursor-pointer"
+                className="w-full h-full object-cover rounded-lg shadow-lg cursor-pointer"
                 onClick={() => openModal(index)}
               />
             </div>

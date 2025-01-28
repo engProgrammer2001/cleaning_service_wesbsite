@@ -54,7 +54,7 @@ const BlogDetails = ({ BlogData }) => {
       <div className="flex flex-col lg:flex-row gap-6 px-4 py-8">
         {/* Left Sidebar */}
         <div className="w-full lg:w-1/5 bg-gray-100 p-4 rounded-md shadow-md">
-          <h3 className="text-lg font-semibold mb-4 text-center text-slate-800">
+          <h3 className="text-lg font-semibold mb-4 text-center text-[#ac00b7]">
             All Blogs
           </h3>
           <ul className="space-y-4">
@@ -85,7 +85,7 @@ const BlogDetails = ({ BlogData }) => {
               className="w-full h-auto object-cover rounded-md"
             />
           </div>
-          <h1 className="text-3xl font-bold mb-4 text-gray-800 flex justify-between">
+          <h1 className="text-3xl font-bold mb-4 text-[#ac00b7] flex justify-between">
             {blog.title}
             <span className="text-sm text-gray-500">{blog.date}</span>
           </h1>
@@ -95,7 +95,7 @@ const BlogDetails = ({ BlogData }) => {
 
           {/* Benefits Section */}
           <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-[#ac00b7] mb-4">
               Key Benefits
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
@@ -106,7 +106,7 @@ const BlogDetails = ({ BlogData }) => {
           </div>
           {/* nonInclusions Section */}
           <div className="mb-6">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h2 className="text-2xl font-semibold text-[#ac00b7] mb-4">
               Non Inclusions
             </h2>
             <ul className="list-disc pl-5 space-y-2 text-gray-700">
@@ -123,7 +123,9 @@ const BlogDetails = ({ BlogData }) => {
       </div>
       {/* contact Form  */}
       <div className="my-10">
-        <h1 className="text-center text-slate-700 text-3xl font-bold">Contact Today</h1>
+        <h1 className="text-center text-[#ac00b7] text-3xl font-bold">
+          Contact Today
+        </h1>
         <ContactForm />
       </div>
     </>

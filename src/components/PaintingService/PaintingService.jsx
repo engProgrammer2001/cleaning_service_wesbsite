@@ -12,7 +12,7 @@ const PaintingService = () => {
   return (
     <div className="p-4 max-w-7xl mx-auto">
       <div className="">
-        <h2 className="text-3xl text-slate-800 font-bold">
+        <h2 className="text-3xl text-[#ac00b7] font-bold">
           Popular Painting Services in Bangalore
         </h2>
         <p className="my-4 text-slate-800 text-lg">

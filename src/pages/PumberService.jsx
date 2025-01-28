@@ -13,9 +13,9 @@ const PlumberServices = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative bg-zinc-800 text-white h-[50vh]">
+      <div className="relative bg-zinc-800 text-white h-60 lg:h-[70vh]">
         <img
-          src="https://www.santacleaningservices.com/img/service/2-1.jpg"
+          src="/assets/PlumberServices/Plumber Services2.jpg"
           alt="About us background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -35,7 +35,7 @@ const PlumberServices = () => {
               Plumber Service
             </Link>
           </nav>
-          <h1 className="text-4xl font-bold mt-4 text-slate-800 hover:text-slate-900">
+          <h1 className="text-2xl lg:text-4xl font-bold mt-4 text-slate-800 hover:text-slate-900">
             All Plumber Services
           </h1>
         </div>
@@ -61,7 +61,7 @@ const PlumberServices = () => {
             <div className="p-4">
               <button
                 onClick={() => handleClick(service.id)}
-                className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full"
+                className="w-full bg-[#ac00b7] hover:bg-[#7d0086] text-white font-bold py-2 px-4 rounded-full"
               >
                 View Details
               </button>

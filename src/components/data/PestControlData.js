@@ -2,10 +2,9 @@ const PestControlData = [
   {
     id: 1,
     title: "General Pest Control",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/pestControll/All Pest Control Services.jpg",
+    image2: "/assets/pestControll/Pest Control Services2.jpg",
+    image3: "/assets/pestControll/Pest Control Services3.webp",
     shortDescription: "Comprehensive pest control for a pest-free environment.",
     description:
       "Our General Pest Control service is tailored to address common household pests, ensuring your home or office remains pest-free. Using safe and effective methods, we eliminate pests like ants, spiders, and more. Our team conducts a thorough inspection to identify problem areas and applies targeted treatments to provide long-lasting results.",
@@ -25,10 +24,9 @@ const PestControlData = [
   {
     id: 2,
     title: "Bad Bugs Pest Control",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/pestControll/Bad Bugs Pest Control2.webp",
+    image2: "/assets/pestControll/Bad Bugs Pest Control1.jpg",
+    image3: "/assets/pestControll/Bad Bugs Pest Control3.webp",
     shortDescription: "Eliminating bad bugs with precision and care.",
     description:
       "Our Bad Bugs Pest Control service targets stubborn pests like bed bugs and mites. These pests can cause discomfort and health issues, which is why our team uses advanced techniques to eradicate them effectively. With our expertise, we ensure a pest-free and comfortable living or working space.",
@@ -48,10 +46,9 @@ const PestControlData = [
   {
     id: 3,
     title: "Termite Pest Control",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/pestControll/Termite Pest Control1.webp",
+    image2: "/assets/pestControll/Termite Pest Control4.jpg",
+    image3: "/assets/pestControll/Termite Pest Control3.jpg",
     shortDescription: "Protecting your property from destructive termites.",
     description:
       "Our Termite Pest Control service is designed to safeguard your home or office from termite damage. Using advanced treatment methods, we eliminate termite colonies and prevent their return. Our team conducts thorough inspections to assess the extent of infestation and applies treatments accordingly.",
@@ -71,10 +68,9 @@ const PestControlData = [
   {
     id: 4,
     title: "Mosquito Pest Control",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/pestControll/Mosquito Pest Control.jpg",
+    image2: "/assets/pestControll/Mosquito Pest Control2.webp",
+    image3: "/assets/pestControll/Mosquito Pest Control3.webp",
     shortDescription: "Breathe easy with our mosquito control services.",
     description:
       "Our Mosquito Pest Control service ensures a mosquito-free environment, allowing you to enjoy your space without worries. We use advanced spraying techniques and safe repellents to reduce mosquito populations effectively. Our team identifies breeding sites and applies targeted treatments for long-term relief.",
@@ -94,10 +90,9 @@ const PestControlData = [
   {
     id: 5,
     title: "Cockroach Pest Control",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/pestControll/Cockroach Pest Control.png",
+    image2: "/assets/pestControll/Cockroach Pest Control2.jpeg",
+    image3: "/assets/pestControll/Cockroach Pest Control3.jpeg",
     shortDescription: "Say goodbye to cockroaches with our expert services.",
     description:
       "Our Cockroach Pest Control service targets cockroaches using safe and effective methods. These pests are known for spreading diseases, and our team ensures their complete removal from your property. We apply targeted treatments to eliminate existing infestations and prevent future occurrences.",

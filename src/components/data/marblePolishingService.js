@@ -2,10 +2,9 @@ const marblePolishingService = [
   {
     id: 1,
     title: "Marble Polishing",
-    image: "https://via.placeholder.com/150",
-    image1: "https://via.placeholder.com/150",
-    image2: "https://via.placeholder.com/150",
-    image3: "https://via.placeholder.com/150",
+    image: "/assets/gallery/k16.jpeg",
+    image2: "/assets/gallery/k18.jpeg",
+    image3: "/assets/gallery/k12.jpeg",
     shortDescription:
       "Restore the natural shine and elegance of your marble surfaces.",
     description:

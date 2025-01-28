@@ -7,17 +7,25 @@ import { PiUsersFourFill } from "react-icons/pi";
 import { FaProjectDiagram } from "react-icons/fa";
 import { MdLocationCity } from "react-icons/md";
 import { IoPeopleCircleSharp } from "react-icons/io5";
+import { RiRepeatLine } from "react-icons/ri"; // New icon for Repeated Projects
 
 const CountUpSection = () => {
   // Define icon mapping
   const icons = {
-    "Our Happy Clients": <PiUsersFourFill className="text-7xl text-slate-800" />,
-    "Completed Projects": <FaProjectDiagram className="text-7xl text-slate-800" />,
+    "Our Happy Clients": (
+      <PiUsersFourFill className="text-7xl text-slate-800" />
+    ),
+    "Completed Projects": (
+      <FaProjectDiagram className="text-7xl text-slate-800" />
+    ),
+    // New icon
+    "Repeated Projects": <RiRepeatLine className="text-7xl text-slate-800" />,
     "Branches In India": <MdLocationCity className="text-7xl text-slate-800" />,
     "Total Staff": <IoPeopleCircleSharp className="text-7xl text-slate-800" />,
   };
+
   return (
-    <div className="bg-gradient-to-tr from-yellow-500 to-blue-100 p-8 my-8">
+    <div className="bg-gradient-to-tr from-[#ac00b7] to-blue-100 p-8 my-8">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <CountUpCard
           icon={icons["Our Happy Clients"]}
@@ -30,15 +38,16 @@ const CountUpSection = () => {
           label="Completed Projects"
         />
         <CountUpCard
+          icon={icons["Repeated Projects"]}
+          end={350}
+          label="Repeated Projects"
+        />
+        <CountUpCard
           icon={icons["Branches In India"]}
           end={3}
           label="Branches In India"
         />
-        <CountUpCard
-          icon={icons["Total Staff"]}
-          end={16}
-          label="Total Staff"
-        />
+        <CountUpCard icon={icons["Total Staff"]} end={16} label="Total Staff" />
       </div>
     </div>
   );
@@ -61,4 +70,5 @@ const CountUpCard = ({ icon, end, label, suffix = "" }) => {
     </div>
   );
 };
+
 export default CountUpSection;

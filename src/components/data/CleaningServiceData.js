@@ -113,7 +113,7 @@ const CleaningServiceData = [
   {
     id: 6,
     title: "Mattress Cleaning",
-    image: "/assets/gallery/Mattress Cleaning.jpg",
+    image: "/assets/gallery/Mattress Cleaning5.jpg",
     image2: "/assets/gallery/Mattress Cleaning1.jpg",
     image3: "/assets/gallery/Mattress Cleaning2.webp",
     shortDescription: "Deep cleaning for a healthier and fresher mattress.",

@@ -1,27 +1,46 @@
-import { FaPaintRoller } from "react-icons/fa";
+import { FaPaintRoller, FaHome, FaBrush, FaTint, FaTools, FaTree } from "react-icons/fa";
+
 const PaintingServiceData = [
   {
-    id: 13,
+    id: 1,
     title: "Painting Service",
-    icon: <FaPaintRoller />,
-    path: "/services/painting-service",
+    icon: <FaPaintRoller />, // General painting
+    path: "/painting-service",
   },
   {
-    id: 14,
+    id: 2,
+    title: "Repainting",
+    icon: <FaBrush />, 
+    path: "/painting-service-details/2",
+  },
+  {
+    id: 3,
     title: "Interior Painting",
-    icon: <FaPaintRoller />,
-    path: "/services/interior-painting",
+    icon: <FaHome />, // Icon for interior painting
+    path: "/painting-service-details/3",
   },
   {
-    id: 15,
+    id: 4,
     title: "Exterior Painting",
-    icon: <FaPaintRoller />,
-    path: "/services/exterior-painting",
+    icon: <FaTree />, // Icon for exterior painting
+    path: "/painting-service-details/4",
   },
   {
-    id: 16,
+    id: 5,
+    title: "Waterproofing",
+    icon: <FaTint />, // Icon for waterproofing
+    path: "/services/waterproofing",
+  },
+  {
+    id: 6,
+    title: "Grouting",
+    icon: <FaTools />, // Icon for grouting
+    path: "/services/grouting",
+  },
+  {
+    id: 7,
     title: "Wood Polishing",
-    icon: <FaPaintRoller />,
+    icon: <FaPaintRoller />, // Icon for wood polishing
     path: "/services/wood-polishing",
   },
 ];
