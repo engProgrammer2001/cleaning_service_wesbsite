@@ -10,6 +10,7 @@ const BookYourAppointment = () => {
     service: "",
     email: "",
     message: "",
+    location: "", // Added location field
   });
 
   const [successMessage, setSuccessMessage] = useState("");
@@ -43,6 +44,7 @@ const BookYourAppointment = () => {
         service: "",
         email: "",
         message: "",
+        location: "", // Reset location field
       });
       setTimeout(() => setSuccessMessage(""), 3000); // Clear message after 3 seconds
     } else {
@@ -57,12 +59,6 @@ const BookYourAppointment = () => {
         Book Your Appointment
       </h1>
 
-      {/* Success Message */}
-      {successMessage && (
-        <div className="text-center text-green-500 font-semibold mb-4">
-          {successMessage}
-        </div>
-      )}
       {/* Form Section */}
       <form
         onSubmit={handleSubmit}
@@ -120,6 +116,7 @@ const BookYourAppointment = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
+
         {/* Timing Field */}
         <div className="mb-4">
           <label
@@ -136,6 +133,7 @@ const BookYourAppointment = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
+
         {/* Service Field */}
         <div className="mb-4">
           <label
@@ -158,6 +156,7 @@ const BookYourAppointment = () => {
             ))}
           </select>
         </div>
+
         {/* Email Field */}
         <div className="mb-4">
           <label
@@ -172,6 +171,24 @@ const BookYourAppointment = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Enter your email"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        {/* Location Field */}
+        <div className="mb-4">
+          <label
+            htmlFor="location"
+            className="block text-sm font-semibold mb-2 text-white"
+          >
+            Your Location
+          </label>
+          <input
+            type="text"
+            id="location"
+            value={formData.location}
+            onChange={handleChange}
+            placeholder="Enter your location"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
@@ -193,6 +210,7 @@ const BookYourAppointment = () => {
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           ></textarea>
         </div>
+
         {/* Submit Button */}
         <button
           type="submit"
@@ -200,6 +218,12 @@ const BookYourAppointment = () => {
         >
           Submit
         </button>
+        {/* Success Message */}
+        {successMessage && (
+          <div className="text-center bg-green-500 text-white py-2 font-semibold mb-4">
+            {successMessage}
+          </div>
+        )}
       </form>
     </div>
   );

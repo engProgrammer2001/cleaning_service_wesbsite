@@ -140,7 +140,7 @@ const Footer = () => {
                   <FaInstagram className="text-3xl text-red-400 cursor-pointer" />
                 </a>
                 <a
-                  href="https://www.youtube.com/c/kunamy"
+                  href="https://www.youtube.com/@omprakashbridalmehandi5927"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white p-2 rounded-full transform transition-all duration-100 hover:scale-110"
